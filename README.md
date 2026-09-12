@@ -1,5 +1,8 @@
 # 智能体可信身份与持续核验技术要求
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22730283.svg)](https://doi.org/10.5281/zenodo.22730283)
+
+
 **Technical Requirements for Trusted Agent Identity and Continuous Verification**
 
 [![Version](https://img.shields.io/badge/version-v0.1-0B1F3A)](./智能体可信身份与持续核验技术要求_v0.1_20260911.md)
