@@ -1,0 +1,15 @@
+# agent-trust-identity-spec
+
+> 一份关于智能体身份**运行期可验证性**的技术规范草案。
+
+## Repository
+
+- agent-trust-identity-spec: https://github.com/zhaoxinghua09-cell/agent-trust-identity-spec (一份关于智能体身份**运行期可验证性**的技术规范草案。)
+
+## Ecosystem / 生态
+
+- awesome-trusted-agents: https://github.com/zhaoxinghua09-cell/awesome-trusted-agents
+- lgd-hub: https://github.com/zhaoxinghua09-cell/lgd-hub
+- lgd-skill-marketplace: https://github.com/zhaoxinghua09-cell/lgd-skill-marketplace
+- governanceos: https://github.com/zhaoxinghua09-cell/governanceos
+- skillgate: https://github.com/zhaoxinghua09-cell/skillgate
