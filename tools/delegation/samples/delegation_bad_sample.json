@@ -1,0 +1,17 @@
+{
+  "delegation_id": "del-20261120-bad",
+  "schema_version": "0.1-draft",
+  "status": "draft",
+  "principal": {"id": "did:example:principal-002", "type": "human-or-agent"},
+  "delegate": {"id": "uibc:agent:rogue-sample", "relation": "child-agent"},
+  "delegation_depth": -1,
+  "mandate": {
+    "scope": ["write:identity", "read:profile"],
+    "deny": ["write:identity"],
+    "actions_allowlist": ["lookup"]
+  },
+  "constraints": {"least_privilege": false, "value_bound": "none", "bounded_arguments": false, "context": {}},
+  "validity": {"issued_at": "2026-11-20T11:00:00+08:00", "expires_at": "2026-11-20T10:00:00+08:00", "transferable": true, "revocable": false, "revocation_id": null},
+  "evidence": {"receipt_ref": null, "trusted_timestamp": null, "append_only_log_ref": null, "signed_by": null},
+  "notes": "负样例：用于校验器拦截演示，禁止作为真实委托使用。"
+}

@@ -1,0 +1,16 @@
+{
+  "checklist_version": "0.1-draft",
+  "scope": "UIBC 第二实现互操作检查清单（本地草案，未接入外部身份提供方）",
+  "checks": [
+    {"id": "I1", "layer": "身份绑定", "assertion": "标识与凭证可绑定；标识在生命周期内稳定；未知/伪造标识被拒", "external_concept": "WIMSE-ID / SVID / DID", "status": "gap"},
+    {"id": "I2", "layer": "凭证校验", "assertion": "校验方可验证签名、有效期、受众与主体；过期/篡改/受众不符凭证被拒", "external_concept": "SVID / VC / Credential Token", "status": "gap"},
+    {"id": "I3", "layer": "委托链", "assertion": "委托深度可计数；链上每环可追溯到根主体；断链/超深/越权委托被拒", "external_concept": "Principal Token 链", "status": "gap"},
+    {"id": "I4", "layer": "权限衰减", "assertion": "子代理权限不得超出父代理；允许清单外动作拒绝并记录", "external_concept": "MANDATE / CONSTRAINTS", "status": "gap"},
+    {"id": "I5", "layer": "时限与不可转让", "assertion": "过期失效；不可转让；吊销即时生效；过期/转让/已吊销凭证被拒", "external_concept": "VALIDITY", "status": "gap"},
+    {"id": "I6", "layer": "运行时证明", "assertion": "运行时状态与声明一致；状态不符的声明不予采信", "external_concept": "SET / SPIRE 复核", "status": "deferred"},
+    {"id": "I7", "layer": "证据工件", "assertion": "每次委托/校验产出可追溯收据与时间戳；缺证据记未闭环，不判通过", "external_concept": "证据工件层", "status": "gap"},
+    {"id": "I8", "layer": "拒绝路径", "assertion": "拒绝/失败用例可复现并归档；拒绝路径有样例与回执", "external_concept": "套件通用要求", "status": "partial"},
+    {"id": "I9", "layer": "前向兼容", "assertion": "旧实现可读新记录的新增可选字段；新增字段不破坏历史成绩", "external_concept": "版本兼容政策", "status": "gap"}
+  ],
+  "status_legend": {"partial": "现有套件有雏形，待补断言", "gap": "未实现", "deferred": "扩展项，依赖运行时环境"}
+}

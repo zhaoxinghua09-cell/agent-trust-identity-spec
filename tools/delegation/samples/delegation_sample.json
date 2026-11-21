@@ -1,0 +1,33 @@
+{
+  "delegation_id": "del-20261120-001",
+  "schema_version": "0.1-draft",
+  "status": "draft",
+  "principal": {"id": "did:example:principal-001", "type": "human-or-agent"},
+  "delegate": {"id": "uibc:agent:adapter-sample", "relation": "child-agent"},
+  "delegation_depth": 1,
+  "mandate": {
+    "scope": ["read:profile", "call:registry-lookup"],
+    "deny": ["write:identity", "admin:policy"],
+    "actions_allowlist": ["lookup", "verify"]
+  },
+  "constraints": {
+    "least_privilege": true,
+    "value_bound": "none",
+    "bounded_arguments": true,
+    "context": {"owner": "principal-001", "device_posture": "unverified"}
+  },
+  "validity": {
+    "issued_at": "2026-11-20T10:00:00+08:00",
+    "expires_at": "2026-11-20T11:00:00+08:00",
+    "transferable": false,
+    "revocable": true,
+    "revocation_id": null
+  },
+  "evidence": {
+    "receipt_ref": null,
+    "trusted_timestamp": null,
+    "append_only_log_ref": null,
+    "signed_by": null
+  },
+  "notes": "合成样例，字段为草案占位；未接入任何签发/校验实现，不含真实身份或客户数据。"
+}
