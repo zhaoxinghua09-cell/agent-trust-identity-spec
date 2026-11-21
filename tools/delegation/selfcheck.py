@@ -2,7 +2,7 @@
 """
 selfcheck.py — delegation 本地自检（离线，Python 标准库）。
 
-仅校验 TC-02 委托授权样例（draft-valid / rejected）。
+仅校验 TC-02 委托授权样例（draft-valid / rejected / incomplete）。
 评测登记样例属另一工件，不在本目录，故本自检不引用评测校验器。
 不联网、不读取或修改远程仓库、不签发或校验真实身份。
 
@@ -19,7 +19,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 CASES = [
     ("samples/delegation_sample.json", "draft-valid"),
-    ("samples/delegation_bad_sample.json", "rejected"),
+    ("samples/delegation_conflict.json", "rejected"),
+    ("samples/delegation_missing_field.json", "rejected"),
+    ("samples/delegation_constraint_violation.json", "incomplete"),
 ]
 
 

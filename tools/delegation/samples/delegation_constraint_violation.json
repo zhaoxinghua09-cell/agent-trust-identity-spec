@@ -1,0 +1,28 @@
+{
+  "delegation_id": "del-20261120-constraint",
+  "schema_version": "0.1-draft",
+  "status": "draft",
+  "principal": {"id": "did:example:principal-004", "type": "human-or-agent"},
+  "delegate": {"id": "uibc:agent:adapter-sample", "relation": "child-agent"},
+  "delegation_depth": 1,
+  "mandate": {
+    "scope": ["read:profile", "call:registry-lookup"],
+    "deny": ["write:identity"],
+    "actions_allowlist": ["lookup", "verify"]
+  },
+  "constraints": {
+    "least_privilege": false,
+    "value_bound": "none",
+    "bounded_arguments": false,
+    "context": {}
+  },
+  "validity": {
+    "issued_at": "2026-11-20T11:00:00+08:00",
+    "expires_at": "2026-11-20T10:00:00+08:00",
+    "transferable": true,
+    "revocable": false,
+    "revocation_id": null
+  },
+  "evidence": {"receipt_ref": null, "trusted_timestamp": null, "append_only_log_ref": null, "signed_by": null},
+  "notes": "必拒探针：违反最小权限/参数边界（D4）、时限倒置且可转让（D5）；合成占位，禁止作为真实委托使用。"
+}

@@ -1,0 +1,28 @@
+{
+  "delegation_id": "del-20261120-conflict",
+  "schema_version": "0.1-draft",
+  "status": "draft",
+  "principal": {"id": "did:example:principal-002", "type": "human-or-agent"},
+  "delegate": {"id": "uibc:agent:rogue-sample", "relation": "child-agent"},
+  "delegation_depth": 1,
+  "mandate": {
+    "scope": ["read:profile", "write:identity"],
+    "deny": ["write:identity", "admin:policy"],
+    "actions_allowlist": ["lookup"]
+  },
+  "constraints": {
+    "least_privilege": true,
+    "value_bound": "none",
+    "bounded_arguments": true,
+    "context": {}
+  },
+  "validity": {
+    "issued_at": "2026-11-20T10:00:00+08:00",
+    "expires_at": "2026-11-20T11:00:00+08:00",
+    "transferable": false,
+    "revocable": true,
+    "revocation_id": null
+  },
+  "evidence": {"receipt_ref": null, "trusted_timestamp": null, "append_only_log_ref": null, "signed_by": null},
+  "notes": "必拒探针：scope 与 deny 清单重叠（D3 冲突）；合成占位，禁止作为真实委托使用。"
+}
