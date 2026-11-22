@@ -1,7 +1,7 @@
 {
   "schema": "ai-manifest/v1",
   "repository": "zhaoxinghua09-cell/agent-trust-identity-spec",
-  "role": "规范/投稿仓：加 .well-known/ai.json + README 首屏窄声明",
+  "role": "Specification repo: technical-requirements draft for trusted agent identity and continuous verification; the document is the deliverable and no reference implementation is shipped.",
   "what_it_is": "智能体可信身份与持续核验技术要求 v0.1 · Technical Requirements for Trusted Agent Identity and Continuous Verification",
   "what_it_is_not": "Not a running commercial service. Not a third-party certification, compliance finding, or regulatory approval.",
   "reproduce": "See the README section \"运行测试 / Running the tests\"; commands are verbatim and require no private network.",
